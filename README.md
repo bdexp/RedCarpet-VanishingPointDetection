@@ -4,8 +4,8 @@ An implementation of a convolutional neural network to predict vanishing points 
 
 ### Requirements
 
-Python 2.7
-Virtualenv 15.0.1
+- Python 2.7
+- Virtualenv 15.0.1
 
 ### Setup (For Ubuntu/Linux 64-bit)
 
@@ -16,23 +16,23 @@ Virtualenv 15.0.1
 
 ### Configuration
 
-Data Settings
-DATA_PATH (imageRead.py, String): Path to datasets.
-DATA_FOLDERS (imageRead.py, List[String]): List of folders containing data and labels to be used for training.
-TRAINING_RATIO (main.py, 0.0 - 1.0): How much of the dataset should be used in training.
-DISTORTION_RATE (main.py, 0.0 - 1.0): How much of the dataset should be distorted and added to the training set.
-ADD_FLIPPED (main.py, True/False): Add mirrored images to the training set.
+**Data Settings**
+- DATA_PATH (imageRead.py, String): Path to datasets.
+- DATA_FOLDERS (imageRead.py, List[String]): List of folders containing data and labels to be used for training.
+- TRAINING_RATIO (main.py, 0.0 - 1.0): How much of the dataset should be used in training.
+- DISTORTION_RATE (main.py, 0.0 - 1.0): How much of the dataset should be distorted and added to the training set.
+- ADD_FLIPPED (main.py, True/False): Add mirrored images to the training set.
 
-Execution Settings
-LOAD_MODEL (main.py, True/False): Load existing checkpointfile in /models before training.
-TRAIN_MODEL (main.py, True/False): Execute training step.
-FREEZE_GRAPH (main.py, True/False): Freeze checkpoint and graphdef file to a freezed graph in /models.
+**Execution Settings**
+- LOAD_MODEL (main.py, True/False): Load existing checkpointfile in /models before training.
+- TRAIN_MODEL (main.py, True/False): Execute training step.
+- FREEZE_GRAPH (main.py, True/False): Freeze checkpoint and graphdef file to a freezed graph in /models.
 
-Training Parameters
-BATCH_SIZE (main.py, Int): The number of training examples in one training step.
-STEP_SIZE_MAX (main.py, Int): The total amount of training steps.
-STEP_SIZE_PRINT (main.py, Int): Every step to print the test set accuracy.
-STEP_SIZE_SAVE (main.py, Int): Every step to save the model to a checkpoint file.
+**Training Parameters**
+- BATCH_SIZE (main.py, Int): The number of training examples in one training step.
+- STEP_SIZE_MAX (main.py, Int): The total amount of training steps.
+- STEP_SIZE_PRINT (main.py, Int): Every step to print the test set accuracy.
+- STEP_SIZE_SAVE (main.py, Int): Every step to save the model to a checkpoint file.
 
 ### Running
 
